@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>My Web App</header>
+      <ul>
+        <li><a class="nav-link" href="#overview">Overview</a></li>
+        <li><a class="nav-link" href="#architecture">Architecture</a></li>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#API_Reference">API Reference</a></li>
+        <li><a class="nav-link" href="#installation">Installation</a></li>
+        <li><a class="nav-link" href="#Troubleshooting">Troubleshooting</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="overview">
+        <header>Overview</header>
+        <p>
+          MyWebApp is a web-based application that allows users to create, edit,
+          and share documents online. It is built on a client-server
+          architecture and uses a RESTful API for communication between the
+          frontend and backend.
+        </p>
+        <p>
+          MyWebApp is a user-friendly application that enables users to create,
+          edit, and share documents online. Its intuitive user interface makes
+          it easy to navigate and use, while its powerful features make it an
+          ideal tool for both personal and professional use
+        </p>
+        <p>
+          With MyWebApp, users can collaborate in real-time on documents from
+          anywhere in the world, streamlining the document creation and editing
+          process.
+        </p>
+      </section>
+      <section class="main-section" id="architecture">
+        <header>Architecture</header>
+        <p>
+          MyWebApp is designed with a modular architecture that separates the
+          frontend and backend components. The frontend is built with ReactJS
+          and communicates with the backend using API requests. The backend is
+          built with Node.js and uses a PostgreSQL database to store user data.
+        </p>
+      </section>
+      <section class="main-section" id="features">
+        <header>Features</header>
+        <p>
+          MyWebApp includes several features that make it a powerful tool for
+          document creation and collaboration.
+        </p>
+        <label for="features-list">These features include:</label>
+        <ul id="features-list">
+          <li>Document creation and editing</li>
+          <li>Real-time collaboration with multiple users</li>
+          <li>Version control for documents</li>
+          <li>User authentication and authorization</li>
+          <li>integration with cloud storage services</li>
+        </ul>
+      </section>
+      <section class="main-section" id="API_Reference">
+        <header>API Reference</header>
+        <p>
+          MyWebApp uses a RESTful API to communicate between the frontend and
+          backend. The API has several endpoints that allow for document
+          creation, editing, and management.
+        </p>
+        <p>
+          In addition to the endpoints listed in the previous section, the API
+          also provides endpoints for user authentication and authorization, as
+          well as for uploading and downloading files.
+        </p>
+        <label for="API_Reference_list">The available endpoints include:</label>
+        <ul id="API_Reference_list">
+          <li>`/documents`: GET, POST, PUT, DELETE</li>
+          <li>`/users`: GET, POST, PUT, DELETE</li>
+          <li>`/auth`: POST</li>
+        </ul>
+      </section>
+      <section class="main-section" id="installation">
+        <header>Installation</header>
+        <p>
+          Once the server is running, you can access the MyWebApp frontend by
+          navigating to `http://localhost:3000` in your web browser.
+        </p>
+
+        <label for="installation-list"
+          >To install and run MyWebApp on your local machine, follow these
+          steps:</label
+        >
+        <ol id="installation-list">
+          <li>
+            Clone the repository from GitHub:
+            <code
+              >git clone https://github.com/your-username/MyWebApp.git ```</code
+            >
+          </li>
+          <li>Install Node.js and PostgreSQL on your machine:</li>
+          <li>
+            Install the necessary dependencies with `npm install`:
+            <code>cd MyWebApp npm install</code>
+          </li>
+          <li>
+            Create a `.env` file with your database credentials:
+            <code
+              >DB_HOST=localhost DB_PORT=5432 DB_NAME=mywebapp DB_USER=postgres
+              DB_PASSWORD=yourpassword</code
+            >
+          </li>
+          <li>
+            Run the database migrations with `npm run migrate`:
+            <code>npm run migrate</code>
+          </li>
+          <li>
+            Start the server with `npm start`:
+            <code>npm start</code>
+          </li>
+        </ol>
+      </section>
+      <section class="main-section" id="Troubleshooting">
+        <header>Troubleshooting</header>
+
+        <p>
+          In this section you are provided with some troubleshooting methods in
+          case you run into some problems
+        </p>
+        <label for="Troubleshooting-list"
+          >If you encounter any issues while running MyWebApp, try the following
+          troubleshooting steps:</label
+        >
+        <ul id="Troubleshooting-list">
+          <li>Check that all dependencies are installed and up-to-date</li>
+          <li>Verify that your database credentials are correct</li>
+          <li>Check the server logs for any error messages</li>
+          <li>Reach out to the MyWebApp support team for assistance</li>
+        </ul>
+        <p>
+          Be sure to provide as much detail as possible about the issue,
+          including any error messages you may have encountered. The support
+          team will work with you to resolve the issue as quickly as possible.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
